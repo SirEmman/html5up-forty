@@ -65,7 +65,6 @@ jobs:
   # ===============================
   deploy:
     needs: scan-trivy # Le déploiement ne se lance que si le scan est OK[span_5](end_span)
-    needs: ci
     runs-on: runner-lab
 
     steps:
